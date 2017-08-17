@@ -1,7 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin'),
     HtmlWebpackPlugin = require('html-webpack-plugin');
     BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
-    data = require('./data.js'),
     path = require('path');
 
 module.exports = {
