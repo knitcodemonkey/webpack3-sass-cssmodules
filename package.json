@@ -1,7 +1,7 @@
 {
   "name": "webpack3-scss-cssmodules",
   "version": "1.0.0",
-  "description": "",
+  "description": "A basic example/boilerplate for webpack 3, sass and css modules",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors",
