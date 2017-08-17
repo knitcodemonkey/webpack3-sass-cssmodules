@@ -1,0 +1,35 @@
+@import 'components/variables';
+
+.block {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  min-width: $minWidth;
+  margin: 0 auto;
+}
+
+.block li {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  color: $headers;
+}
+
+a {
+  color: $links;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: $text;
+}
