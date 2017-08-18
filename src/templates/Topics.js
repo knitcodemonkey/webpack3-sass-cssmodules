@@ -13,17 +13,7 @@ const Topics = ({ match }) => (
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>
-          Rendering with React
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>
-          Components
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>
-          Props v. State
+          Styling React for Reuse
         </Link>
       </li>
     </ul>

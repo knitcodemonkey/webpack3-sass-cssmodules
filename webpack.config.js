@@ -21,45 +21,29 @@ module.exports = {
             exclude: /node_modules/
           },
           {
-            test: /\.css$/,
+            test: /\.(scss|css)$/,
             exclude: /node_modules/,
             use: ExtractTextPlugin.extract({
               fallback: 'style-loader',
-
-              // Could also be write as follow:
-              // use: 'css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
               use: [
                 {
-                  loader: 'css-loader',
-                  query: {
+                  loader: require.resolve('css-loader'),
+                  options: {
                     modules: true,
-                    localIdentName: '[name]__[local]___[hash:base64:5]'
-                  }
-                },
-                'postcss-loader'
-              ]
-            }),
-          },
-          {
-            test: /\.scss$/,
-            exclude: /node_modules/,
-            use: ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-
-              // Could also be write as follow:
-              // use: 'css-loader?modules&importLoader=2&sourceMap&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader'
-              use: [
-                {
-                  loader: 'css-loader',
-                  query: {
-                    modules: true,
-                    sourceMap: true,
+                    outputStyle: 'compressed',
+                    sourceMap: false,
                     importLoaders: 2,
-                    localIdentName: '[name]__[local]___[hash:base64:5]'
+                    localIdentName: '[name]__[local]___[hash:base64:5]',
                   }
                 },
-                'sass-loader'
-              ]
+                {
+                  loader: require.resolve('sass-loader'),
+                  options: {
+                    outputStyle: 'compressed',
+                    sourceMap: false
+                  }
+                },
+              ],
             }),
           },
         ],

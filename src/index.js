@@ -6,6 +6,7 @@ import About from "./templates/About";
 import Home from "./templates/Home";
 import Topics from "./templates/Topics";
 import styles from './scss/header.scss';
+import baseStyles from './scss/base.scss';
 
 const BasicExample = () => (
     <Router>
@@ -25,11 +26,11 @@ const BasicExample = () => (
         </header>
 
         <hr />
-        <div>
+        <article>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/topics" component={Topics} />
-        </div>
+        </article>
       </div>
   </Router>
 );
