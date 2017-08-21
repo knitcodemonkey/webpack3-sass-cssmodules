@@ -1,0 +1,22 @@
+/* TALKS STYLES */
+
+@import 'base/variables';
+@import 'base/base';
+
+.block {
+  border-bottom: 1px solid $border;
+  margin: 0 20px;
+}
+
+.talk {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+h2 {
+  color: $talkHeader;
+}
+
+h3 {
+  color: $talkSubheaders;
+}
