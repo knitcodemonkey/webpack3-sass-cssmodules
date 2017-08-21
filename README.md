@@ -19,12 +19,21 @@ React is used in this project not to build a complex web app but instead to orga
 ```
 /src
   /components
-    /Button
-      Button.js
-      styles.css
-    /Title
-      Title.js
-      style.css
+    /Header
+      Header.js
+      header.scss
+  /scss
+    /base
+        _base.scss
+        _variables.scss
+    home.scss
+    talks.scss
+  /templates
+    index.html
+  About.js
+  Home.js
+  Talks.js
+        
 ```
 
 ## Issues
