@@ -20,3 +20,4 @@ const Home = () => (
 render(
   <Home />,
   document.getElementById("main")
+);
